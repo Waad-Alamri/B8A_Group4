@@ -8,7 +8,8 @@ public class Lab1_cpit251 {
         
         System.out.println("Hello, I'm Huda");
         
-        System.out.println("Hello, I'm Abeer");
+        System.out.println("Hello, I'm Abeer"); 
+        
     }
     
 }
