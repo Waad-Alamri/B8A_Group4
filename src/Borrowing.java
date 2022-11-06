@@ -25,6 +25,8 @@ public class Borrowing {
                 chosenBook.setCopies(numOfCopies - 1);
                 // set the customer borrowed books number, by increase one
                 currentlyCustomer.setNum_currentlyBorrowedBooks(currentlyCustomer.getNum_currentlyBorrowedBooks() + 1);
+                // add to borrowed book 
+                Login.currentlyCustomer.setBorrowedBooks(chosenBook);
                 // display window of the available times to select the borrowing period
                 availableTimes a = new availableTimes();
                 a.setVisible(true);

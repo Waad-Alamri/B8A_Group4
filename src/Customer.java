@@ -15,6 +15,9 @@ public class Customer extends User {
     
     private Membership membership;
     private ArrayList<Book> cart = new ArrayList<Book>();
+    private ArrayList <Book> borrowedBooks = new ArrayList<Book>();
+    private String issueDate;
+    private String dueDate;
     
     public Customer(int user_id, String user_name, String password, int phone, String email) {
         super();
@@ -67,6 +70,31 @@ public class Customer extends User {
         
         BorrowingGUI b = new BorrowingGUI();
         b.setVisible(true);
+    }
+    public String getIssueDate() {
+        return issueDate;
+    }
+
+    public void setIssueDate(String issueDate) {
+        this.issueDate = issueDate;
+    }
+
+    public String getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(String dueDate) {
+        this.dueDate = dueDate;
+    }
+    
+    
+    public ArrayList<Book> getBorrowedBooks() {
+        return borrowedBooks;
+    }
+
+    public void setBorrowedBooks(Book borrowedBook) {
+        
+        this.borrowedBooks.add(borrowedBook);
     }
     
 }

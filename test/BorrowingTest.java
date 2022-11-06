@@ -69,4 +69,17 @@ public class BorrowingTest {
         Customer currentlyCustomer = new Customer("maha", "silver", 4);
         Borrowing.borrowing(chosenBook, currentlyCustomer);
     }
+
+    /**
+     * Test of borrowing method, of class Borrowing.
+     */
+    @Test
+    public void testBorrowing() {
+        System.out.println("borrowing");
+        Book chosenBook = null;
+        Customer currentlyCustomer = null;
+        Borrowing.borrowing(chosenBook, currentlyCustomer);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
 }

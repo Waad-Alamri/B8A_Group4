@@ -146,21 +146,37 @@ public class availableTimes extends javax.swing.JFrame {
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
         // TODO add your handling code here:
          time = jRadioButton2.getText();
+        String issueDate = "2022-10-21";
+        String dueDate = "2022-10-30";
+        Login.currentlyCustomer.setIssueDate(issueDate);
+        Login.currentlyCustomer.setDueDate(dueDate);
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
         // TODO add your handling code here:
         time = jRadioButton3.getText();
+        String issueDate = "2022-10-21";
+        String dueDate = "2022-10-30";
+        Login.currentlyCustomer.setIssueDate(issueDate);
+        Login.currentlyCustomer.setDueDate(dueDate);
     }//GEN-LAST:event_jRadioButton3ActionPerformed
 
     private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
         // TODO add your handling code here:
         time = jRadioButton5.getText();
+        String issueDate = "2022-10-11";
+        String dueDate = "2022-10-20";
+        Login.currentlyCustomer.setIssueDate(issueDate);
+        Login.currentlyCustomer.setDueDate(dueDate);
     }//GEN-LAST:event_jRadioButton5ActionPerformed
 
     private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
         // TODO add your handling code here:
         time = jRadioButton4.getText();
+        String issueDate = "2022-11-01";
+        String dueDate = "2022-11-10";
+        Login.currentlyCustomer.setIssueDate(issueDate);
+        Login.currentlyCustomer.setDueDate(dueDate);
     }//GEN-LAST:event_jRadioButton4ActionPerformed
 
     /**
