@@ -1,7 +1,13 @@
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
 public class NewJFrame extends javax.swing.JFrame {
 
     public Customer customer = new Customer();
+    public Manager manager = new Manager();
     
     public NewJFrame() {
         initComponents();
@@ -138,7 +144,13 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_searchActionPerformed
 
     private void Add_bookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add_bookActionPerformed
-        // TODO add your handling code here:
+        try {
+            // TODO add your handling code here:
+            manager.AddBook();
+        } catch (IOException ex) {
+            Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }//GEN-LAST:event_Add_bookActionPerformed
 
     /**

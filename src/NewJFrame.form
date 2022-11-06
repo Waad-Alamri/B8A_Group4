@@ -151,7 +151,6 @@
           <Color blue="66" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Add book"/>
-        <Property name="actionCommand" type="java.lang.String" value="Add book"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Add_bookActionPerformed"/>
