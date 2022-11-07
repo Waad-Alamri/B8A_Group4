@@ -224,7 +224,7 @@ public class BorrowingGUI extends javax.swing.JFrame {
             Logger.getLogger(BorrowingGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
         // call Borrowing method
-        Borrowing.borrowing(chosenBook, Login.currentlyCustomer);
+        int b = Borrowing.borrowing(chosenBook, Login.currentlyCustomer);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed

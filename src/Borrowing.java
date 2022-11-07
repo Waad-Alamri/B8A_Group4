@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  * @author suma4
  */
 public class Borrowing {
-    public static void borrowing(Book chosenBook, Customer currentlyCustomer) {
+    public static int borrowing(Book chosenBook, Customer currentlyCustomer) {
         
         // first, check if the book is available
         if (chosenBook.isAvailable()) {
@@ -30,16 +30,20 @@ public class Borrowing {
                 // display window of the available times to select the borrowing period
                 availableTimes a = new availableTimes();
                 a.setVisible(true);
+                return 1;
             }// if execeed, reject 
             else {
                 JOptionPane.showMessageDialog(null, currentlyCustomer.getCustomer_name()
                         + ", You are execeed the max number of borrowed books"
                         + "\n You have now " + currentlyCustomer.getNum_currentlyBorrowedBooks()
                         + " borrowed books");
+                return -1;
             }
             // if book not available, display error message
         } else {
             JOptionPane.showMessageDialog(null, "This book is not currently available");
+            return 0;
         }
+       
     }
 }

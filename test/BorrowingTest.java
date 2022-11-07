@@ -40,46 +40,25 @@ public class BorrowingTest {
      * Test of borrowing method, of class Borrowing.
      */
     @Test
-    // if the borrowing successfully
-    public void testBorrowing_1() {
-        System.out.println("borrowing");
-        Book chosenBook = new Book(1612680194, "Rich_Dad_Poor_Dad", "Robert_Kiyosaki", "Business_and_Management", 3);
-        Customer currentlyCustomer = new Customer("maha", "silver", 4);
-        Borrowing.borrowing(chosenBook, currentlyCustomer);
-        int result = currentlyCustomer.getNum_currentlyBorrowedBooks();
-        int expResult = 5;
-        assertEquals(expResult, result, 0.0);
-    }
-    
-    
-    @Test
-    // if the borrowing rejected due to exceeded the max
+    // borrowing rejected due to custoomer exceeded the max, the method will return -1
     public void testBorrowing_2() {
-        System.out.println("borrowing");
+        System.out.println("borrowing rejected");
         Book chosenBook = new Book(1612680194, "Rich_Dad_Poor_Dad", "Robert_Kiyosaki", "Business_and_Management", 3);
         Customer currentlyCustomer = new Customer("maha", "silver", 5);
-        Borrowing.borrowing(chosenBook, currentlyCustomer);
+        int result = Borrowing.borrowing(chosenBook, currentlyCustomer);
+        int expResult = -1;
+        assertEquals(expResult, result);
     }
     
-    // if the book not available
+    // if the book not available, the method will return 0
     @Test
     public void testBorrowing_3() {
-        System.out.println("borrowing");
+        System.out.println("book not available");
         Book chosenBook = new Book(1471156265, "It_Ends_With_Us", "Colleen_Hoover", "romance_novel", 0);
         Customer currentlyCustomer = new Customer("maha", "silver", 4);
-        Borrowing.borrowing(chosenBook, currentlyCustomer);
+        int result = Borrowing.borrowing(chosenBook, currentlyCustomer);
+        int expResult = 0;
+        assertEquals(expResult, result);
     }
 
-    /**
-     * Test of borrowing method, of class Borrowing.
-     */
-    @Test
-    public void testBorrowing() {
-        System.out.println("borrowing");
-        Book chosenBook = null;
-        Customer currentlyCustomer = null;
-        Borrowing.borrowing(chosenBook, currentlyCustomer);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
 }

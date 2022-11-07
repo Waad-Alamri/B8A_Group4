@@ -38,6 +38,7 @@ public class AddBook extends javax.swing.JFrame {
      */
     public AddBook() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

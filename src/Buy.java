@@ -46,6 +46,7 @@ public class Buy extends javax.swing.JFrame {
 
     public Buy() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
