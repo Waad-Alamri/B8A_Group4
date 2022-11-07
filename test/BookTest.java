@@ -43,10 +43,10 @@ public class BookTest {
     public void testSetCopies() {
         System.out.println("setCopies");
         int copies = 0;
-        Book instance = null;
+        Book instance = new Book(1471156265, "it ends with us", "Colleen Hoover" , "romance novel" , 0);
         instance.setCopies(copies);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -55,12 +55,12 @@ public class BookTest {
     @Test
     public void testGetISBN() {
         System.out.println("getISBN");
-        Book instance = null;
-        int expResult = 0;
+        Book instance = new Book(1471156265, "it ends with us", "Colleen Hoover" , "romance novel" , 0);
+        int expResult = 1471156265;
         int result = instance.getISBN();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -69,12 +69,12 @@ public class BookTest {
     @Test
     public void testGetTitle() {
         System.out.println("getTitle");
-        Book instance = null;
-        String expResult = "";
+        Book instance = new Book(1471156265, "it ends with us", "Colleen Hoover" , "romance novel" , 0);
+        String expResult = "it ends with us";
         String result = instance.getTitle();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -83,12 +83,12 @@ public class BookTest {
     @Test
     public void testGetAuthor() {
         System.out.println("getAuthor");
-        Book instance = null;
-        String expResult = "";
+        Book instance = new Book(1471156265, "it ends with us", "Colleen Hoover" , "romance novel" , 0);
+        String expResult = "Colleen Hoover";
         String result = instance.getAuthor();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -97,12 +97,12 @@ public class BookTest {
     @Test
     public void testGetClassfication() {
         System.out.println("getClassfication");
-        Book instance = null;
-        String expResult = "";
+        Book instance = new Book(1471156265, "it ends with us", "Colleen Hoover" , "romance novel" , 0);
+        String expResult = "romance novel";
         String result = instance.getClassfication();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -111,12 +111,12 @@ public class BookTest {
     @Test
     public void testGetCopies() {
         System.out.println("getCopies");
-        Book instance = null;
+        Book instance = new Book(1471156265, "it ends with us", "Colleen Hoover" , "romance novel" , 0);
         int expResult = 0;
         int result = instance.getCopies();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -125,12 +125,12 @@ public class BookTest {
     @Test
     public void testShowDetail() {
         System.out.println("showDetail");
-        Book instance = null;
-        String expResult = "";
+        Book instance = new Book(1471156265, "it ends with us", "Colleen Hoover" , "romance novel" , 0);
+        String expResult = "Book{" + "ISBN=" + 1471156265 + ", title=" + "it ends with us" + ", author=" + "Colleen Hoover" + ", classfication=" + "romance novel" + '}';
         String result = instance.showDetail();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
